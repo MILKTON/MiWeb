@@ -24,7 +24,7 @@ nav li ul {
   display: none; 
 }
  
-nav ul li a {
+ul li a {
   display: block;
   text-decoration: none;
   padding: 7px 15px 3px 15px;
@@ -70,6 +70,7 @@ nav ul li ul li a {
 nav {
   background-color:#2C5463; /*+*/
   height:40px;
+
 }
 
 
@@ -82,7 +83,6 @@ nav {
   display: table; // Needed
   width: 100%; // Needed
   height: 100%; // Needed
-  padding-top: 10px;
 }
 .row {
   display: table-row; // Needed
