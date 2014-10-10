@@ -78,6 +78,10 @@ nav {
   display: table; // Needed
   width: 100%; // Needed
   height: 100%; // Needed
+  margin-left: 1%;
+  padding-left: 1%;
+  margin-right: 1%;
+  padding-right: 1%;
 }
 .row {
   display: table-row; // Needed
@@ -87,6 +91,8 @@ nav {
 .center {
   display: table-cell; // Needed
   padding: 20px;
+    border: solid;
+
 }
 .left,
 .right {
