@@ -1,67 +1,76 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+/* START NAV MENU */
+nav {
+  background-color:#2C5463;
+  height:40px;
 }
-
-li {
-    float: left;
+ 
+ 
+nav ul {
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-a:link, a:visited {
-    display: block;
-    width: 120px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #98bf21;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
+ 
+nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+ 
 }
-
-a:hover, a:active {
-    background-color: #7A991A;
+ 
+nav li ul { 
+  display: none; 
 }
-
-
-nav li{
-	display: inline;
-	padding-right: 150px;
-	padding-left: 150px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin: 2px;
+ 
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  background: #2C5463;
+  color: #ffffff;  
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  width:90px;
+  text-align:center;
+ 
 }
-
-nav ul{
- 	/*Lo que este aqui a todos los elementos*/
- 	list-style-type: none; 
- 	background-color: none;
+ 
+nav ul li a:hover { 
+  background: #617F8A; 
 }
-
-nav ul li{
-	background-color:none;
+ 
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
 }
-
-nav ul li a.hover,nav ul li a:focus{
-	background-color: yellow;
-	
+ 
+nav li:hover li {
+  float: none;
+  font-size: 11px;
+ 
 }
-
-nav ul li a{
-	text-decoration: none;
+ 
+nav li:hover a { 
+  background: #3A464F; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
 }
-nav{
-	background:linear-gradient( gray,black);
-	width: 95%;
-	height: 10vh;
-	margin-right:auto;
-	margin-left:auto; 
-	border: 3px dashed;
-	border-radius: 10px;
-	margin-bottom: 25px;
+ 
+nav li:hover li a:hover { 
+  background: #95A9B1; 
+}
+ 
+nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* END NAV MENU */
+nav {
+  background-color:#2C5463; /*+*/
+  height:40px;
 }
 
 .container{
