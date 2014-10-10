@@ -1,0 +1,53 @@
+nav{
+	background:linear-gradient( gray,black);
+	width: 95%;
+	height: 10vh;
+	margin-right:auto;
+	margin-left:auto; 
+	border: 3px dashed;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+nav li{
+	display: inline;
+	padding-right: 150px;
+	padding-left: 150px;
+}
+
+
+nav ul{
+ 	/*Lo que este aqui a todos los elementos*/
+ 	list-style-type: none; 
+ 	background-color: none;
+}
+
+nav ul li{
+	background-color:none;
+}
+
+nav ul li a.hover,nav ul li a:focus{
+	background-color: yellow;
+	
+}
+
+nav ul li a{
+	text-decoration: none;
+}
+
+.container{
+	width:  50%;
+	padding-right: 20px;
+	padding-left: 20px;
+	background: radial-gradient(gray,white,gray);/*centro,final, medio*/
+	border: 2px solid;
+	box-shadow: 2px 2px 2px; /*x,y,degradado*/
+	border-radius: 5px;
+	margin-left:2.5%;
+}
+
+#uno{
+	text-shadow: 2px 1px 2px black;
+}
+
+/* *referencia mediante un id*/
