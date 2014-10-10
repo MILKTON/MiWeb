@@ -137,3 +137,18 @@ ul {
  	margin-right: 0px;
 
  }
+
+#wrap {margin:0;	padding:0;	height:3%;}
+#wrap {display:table;width:100%}
+/* if ie7 support is needed then set height of #wrap and header and footer to auto in CC's and just let it have a normal layout (or: *+html #wrap{height:auto})*/
+.content { background:#ccc; }
+header {	background:#999;	color:#fff;	text-align:center;	padding:10px 0}
+header, .footer, main { display:block}/* ie7 and under*/
+header, .footer, main { display:table-row }
+/* height 1px on the header and footer is the sticky footer technique */
+header, .footer{height:1px}
+h1{padding:10px;margin:0;}
+.footer {background:#999;	color:#fff;	text-align:center;}
+.footer p {	margin:0;	padding:10px}
+
+/*
