@@ -82,6 +82,7 @@ nav {
   display: table; // Needed
   width: 100%; // Needed
   height: 100%; // Needed
+  padding-top: 10px;
 }
 .row {
   display: table-row; // Needed
@@ -94,12 +95,12 @@ nav {
 }
 .left,
 .right {
-  width: 160px;
+  width: 20%;
   background: Aquamarine;
 }
 .center {
   background: Pink;
-  border-right: solid 20px white;
+  border-right: solid 100px white;
 }
 
 
@@ -109,7 +110,6 @@ body {
   height: 100%;
 }
 body {
-  padding: 20px;
   box-sizing: border-box;
 }
 h1 {
@@ -125,3 +125,6 @@ ul {
 }
 
  /*END BAR*/
+ header{
+ 	padding-top:0px;
+ }
