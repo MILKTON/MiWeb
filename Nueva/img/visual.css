@@ -1,0 +1,154 @@
+/* START NAV MENU */
+nav {
+  background-color:#2C5463;
+  height:40px;
+}
+ 
+ 
+nav ul {
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+ 
+}
+ 
+nav li ul { 
+  display: none; 
+}
+ 
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  background: #2C5463;
+  color: #ffffff;  
+  margin-left: 1px;
+  height:30px; /* Width and height of top-level nav items */
+  width:90px;
+  text-align:center;
+ 
+}
+ 
+nav ul li a:hover { 
+  background: #617F8A; 
+}
+ 
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+ 
+nav li:hover li {
+  float: none;
+  font-size: 11px;
+ 
+}
+ 
+nav li:hover a { 
+  background: #3A464F; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+ 
+nav li:hover li a:hover { 
+  background: #95A9B1; 
+}
+ 
+nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* END NAV MENU */
+nav {
+  background-color:#2C5463; /*+*/
+  height:40px;
+}
+
+ /*SIDE BAR*/
+
+.container {
+  display: table; // Needed
+  width: 100%; // Needed
+  height: 100%; // Needed
+  margin-left: 1%;
+  padding-left: 1%;
+  margin-right: 1%;
+  padding-right: 1%;
+}
+.row {
+  display: table-row; // Needed
+}
+.left,
+.right,
+.center {
+  display: table-cell; // Needed
+  padding: 20px;
+    border: solid;
+
+}
+.left,
+.right {
+  width: 20%;
+  background: red;
+}
+.center {
+  background: cyan;
+  border-right: solid 100px white;
+}
+
+
+// Reset / Styling
+html,
+body {
+  height: 100%;
+}
+body {
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+}
+p {
+  margin: 0 0 20px 0;
+}
+ul {
+  padding: 0 0 0 20px;
+}
+
+ /*END BAR*/
+ header{
+ 	padding-top:0px;
+ }
+ body
+ {
+ 	margin-top: 0px;
+ 	margin-bottom: 20px;
+ 	margin-left: 0px;
+ 	margin-right: 0px;
+
+ }
+
+#wrap {margin:0;	padding:0;	height:3%;}
+#wrap {display:table;width:100%}
+/* if ie7 support is needed then set height of #wrap and header and footer to auto in CC's and just let it have a normal layout (or: *+html #wrap{height:auto})*/
+.content { background:#ccc; }
+header {	background:#999;	color:#fff;	text-align:center;	padding:10px 0}
+header, .footer, main { display:block}/* ie7 and under*/
+header, .footer, main { display:table-row }
+/* height 1px on the header and footer is the sticky footer technique */
+header, .footer{height:1px}
+h1{padding:10px;margin:0;}
+.footer {background:#999;	color:#fff;	text-align:center;}
+.footer p {	margin:0;	padding:10px}
+
+/*
